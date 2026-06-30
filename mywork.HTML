@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Treasure Hunt Registration</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:20px;
+}
+
+.container{
+    background:#fff;
+    width:900px;
+    max-width:100%;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 15px 35px rgba(0,0,0,.35);
+}
+
+.header{
+    background:linear-gradient(45deg,#ff9800,#ff5722);
+    color:#fff;
+    text-align:center;
+    padding:35px;
+}
+
+.header h1{
+    font-size:38px;
+    margin-bottom:10px;
+}
+
+.header p{
+    font-size:18px;
+}
+
+.content{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+}
+
+.left{
+    padding:35px;
+}
+
+.right{
+    background:#f8f9fa;
+    padding:35px;
+    text-align:center;
+    border-left:2px dashed #ddd;
+}
+
+label{
+    display:block;
+    margin-top:15px;
+    font-weight:600;
+}
+
+input,select{
+    width:100%;
+    padding:12px;
+    border-radius:8px;
+    border:1px solid #ccc;
+    margin-top:6px;
+    font-size:15px;
+}
+
+button{
+    width:100%;
+    margin-top:25px;
+    background:#ff5722;
+    color:white;
+    border:none;
+    padding:15px;
+    font-size:18px;
+    border-radius:10px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#e64a19;
+}
+
+.prizes{
+    background:#fff7e6;
+    border-left:5px solid orange;
+    padding:15px;
+    margin-top:20px;
+    border-radius:10px;
+}
+
+.prizes h3{
+    color:#ff5722;
+    margin-bottom:10px;
+}
+
+.prizes ul{
+    padding-left:18px;
+}
+
+.qr{
+    width:220px;
+    border:8px solid white;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+.note{
+    margin-top:15px;
+    color:#555;
+    font-size:15px;
+}
+
+.footer{
+    background:#203a43;
+    color:#fff;
+    text-align:center;
+    padding:15px;
+}
+
+@media(max-width:700px){
+
+.content{
+grid-template-columns:1fr;
+}
+
+.right{
+border-left:none;
+border-top:2px dashed #ddd;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+
+<div class="container">
+
+<h1>SB Jain Institute Of Technology Management And Research,Nagpur</h1>
+
+<div class="header">
+<h1>🏴‍☠️ Treasure Hunt Event </h1>
+<p>Find the Clues • Solve the Mystery • Win Amazing Rewards!</p>
+</div>
+
+<div class="content">
+
+<div class="left">
+
+<h2>Event Registration</h2>
+
+<form>
+
+<label>Full Name</label>
+<input type="text" placeholder="Enter your name" required>
+
+<label>Email Address</label>
+<input type="email" placeholder="Enter your email" required>
+
+<label>Phone Number</label>
+<input type="tel" placeholder="Enter phone number" required>
+
+<label>College / Organization</label>
+<input type="text" placeholder="Enter college " required>
+
+<label>Team Name</label>
+<input type="text" placeholder="Optional">
+
+<label>Number of Participants</label>
+<select>
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+</select>
+
+<button type="submit">🚀 Register Now</button>
+
+</form>
+
+<div class="prizes">
+<h3>🎁 Exciting Prizes</h3>
+<ul>
+<li>🥇 1st Prize – ₹10,000 Cash + Trophy</li>
+<li>🥈 2nd Prize – ₹5,000 Cash</li>
+<li>📜 Participation Certificate for Everyone</li>
+</ul>
+</div>
+
+</div>
+
+<div class="right">
+
+<h2>📱 Scan to Register</h2>
+
+<!-- Replace this QR image with your own registration/payment QR -->
+<img
+class="qr"
+src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https://example.com/register"
+alt="QR Code">
+
+<p class="note">
+Scan this QR code to open the online registration page.
+</p>
+
+<br>
+
+<h3>📅 Event Details</h3>
+
+<p><strong>Date:</strong> 30 JUNE 2026</p>
+<p><strong>Time:</strong> 11:00 AM</p>
+<p><strong>Venue:</strong> CANTEEN</p>
+<p><strong>Registration Fee:</strong> ₹140 per Team</p>
+
+</div>
+
+</div>
+
+<div class="footer">
+🏆 Adventure Awaits! Register Today & Become the Ultimate Treasure Hunter.
+</div>
+
+</div>
+
+</body>
+</html>
